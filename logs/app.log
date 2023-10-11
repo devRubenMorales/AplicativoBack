@@ -1,0 +1,29 @@
+2023-10-10T18:46:25.029Z info: 🟢 Middlewares configurated
+2023-10-10T18:46:25.031Z info: 🟢 Routes registered
+2023-10-10T18:46:25.036Z info: 🟢 App listening on the port 3000
+2023-10-10T18:46:25.051Z info: 🟢 Connected to the database
+2023-10-10T18:47:22.344Z info: [0mPOST /users [32m200[0m 35.562 ms - 204[0m
+2023-10-11T16:16:20.193Z info: 🟢 Middlewares configurated
+2023-10-11T16:16:20.195Z info: 🟢 Routes registered
+2023-10-11T16:16:20.198Z info: 🟢 App listening on the port 3000
+2023-10-11T16:16:20.207Z info: 🟢 Connected to the database
+2023-10-11T16:16:24.421Z error: Error 401 - Invalid Password
+2023-10-11T16:16:24.426Z info: [0mPOST /auth/login [33m401[0m 51.410 ms - 43[0m
+2023-10-11T16:20:55.121Z error: Error 500 - E11000 duplicate key error collection: database-example.users index: email_1 dup key: { email: "ruben@gmail.com" }
+2023-10-11T16:20:55.123Z info: [0mPOST /users [31m500[0m 21.910 ms - 143[0m
+2023-10-11T16:21:12.906Z info: [0mPOST /users [32m200[0m 3.795 ms - 204[0m
+2023-10-11T16:23:00.098Z error: Error 401 - Invalid Password
+2023-10-11T16:23:00.099Z info: [0mPOST /auth/login [33m401[0m 3.464 ms - 43[0m
+2023-10-11T16:26:09.998Z info: 🟢 Middlewares configurated
+2023-10-11T16:26:10.000Z info: 🟢 Routes registered
+2023-10-11T16:26:10.003Z info: 🟢 App listening on the port 3000
+2023-10-11T16:26:10.012Z info: 🟢 Connected to the database
+2023-10-11T16:30:03.514Z info: 🟢 Middlewares configurated
+2023-10-11T16:30:03.515Z info: 🟢 Routes registered
+2023-10-11T16:30:03.518Z info: 🟢 App listening on the port 3000
+2023-10-11T16:30:03.527Z info: 🟢 Connected to the database
+2023-10-11T16:30:15.993Z info: [0mPOST /users [32m200[0m 22.342 ms - 204[0m
+2023-10-11T16:30:27.934Z error: Error 401 - Invalid Password
+2023-10-11T16:30:27.935Z info: [0mPOST /auth/login [33m401[0m 14.572 ms - 43[0m
+2023-10-11T16:41:44.624Z info: [0mPOST /auth/signup [32m200[0m 64.545 ms - 179[0m
+2023-10-11T16:42:00.460Z info: [0mPOST /auth/login [32m200[0m 61.182 ms - 362[0m
