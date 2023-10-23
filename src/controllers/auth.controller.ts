@@ -10,7 +10,7 @@ export const signup = async (
   next: NextFunction
 ) => {
   try {
-    const { nombre, email, contraseña, rol } = req.body;
+    const { nombre, email, contraseña, rol, imageUrl } = req.body;
 
     if (await User.findOne({ email })) { throw new HttpException(400, 'The user is already registered'); }
     
@@ -19,6 +19,7 @@ export const signup = async (
       email,
       contraseña,
       rol,
+      imageUrl
     });
 
     if ((await user.guardarContraseña()) === false) {

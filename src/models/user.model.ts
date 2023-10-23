@@ -26,6 +26,9 @@ const UserSchema = new Schema<IUser>(
       default: "usuario",
       enum: ["admin", "usuario"],
     },
+    imageUrl: {
+      type: String
+    }
   },
   {
     timestamps: { createdAt: true, updatedAt: true },
