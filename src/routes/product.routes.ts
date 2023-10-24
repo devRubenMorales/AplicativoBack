@@ -1,7 +1,7 @@
 import { Router } from "express";
 import * as productController from "../controllers/product.controller";
 import { authMiddleware } from "../middlewares/auth.middleware";
-import { productsValidators } from "../middlewares/validators/productValidators";
+import { mongoIdValidator, productsValidators } from "../middlewares/validators/productValidators";
 import { handleValidationErrors } from "../middlewares/validation.middleware";
 import { adminMiddleware } from "../middlewares/product.middleware";
 
@@ -22,7 +22,10 @@ router.post(
     productController.create
 );
 // OBTENER UNO
-router.get("/:id", productController.show);
+router.get("/:id", ...mongoIdValidator, 
+    handleValidationErrors, 
+    productController.show
+);
 // BORRAR
 router.delete(
     "/:id",

@@ -17,7 +17,7 @@ export const productsValidators: Array<ValidationChain> = [
       .withMessage('La URL de la imagen no es válida'),
 ];
 
-export const mongoIdValidator: ValidationChain = 
+export const mongoIdValidator: Array<ValidationChain> = [
   check("id")
       .isMongoId()
-      .withMessage("El ID proporcionado no es válido para MongoDB.");
+      .withMessage("El ID proporcionado no es válido para MongoDB.")];
