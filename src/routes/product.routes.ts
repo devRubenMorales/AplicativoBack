@@ -22,7 +22,8 @@ router.post(
     productController.create
 );
 // OBTENER UNO
-router.get("/:id", ...mongoIdValidator, 
+router.get("/:id", 
+    ...mongoIdValidator, 
     handleValidationErrors, 
     productController.show
 );
@@ -31,6 +32,8 @@ router.delete(
     "/:id",
     authMiddleware,
     adminMiddleware,
+    ...mongoIdValidator, 
+    handleValidationErrors,
     productController.destroy
 );
 

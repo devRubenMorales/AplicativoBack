@@ -18,8 +18,8 @@ export const authSingupValidators: Array<ValidationChain> = [
   //   .withMessage("El rol debe ser 'admin' o 'usuario'"),
 ];
 
-export const mongoIdValidator: ValidationChain = check("id")
+export const mongoIdValidator: Array<ValidationChain> = [check("id")
   .isMongoId()
-  .withMessage("El ID proporcionado no es válido para MongoDB.");
+  .withMessage("El ID proporcionado no es válido para MongoDB.")];
 
   
