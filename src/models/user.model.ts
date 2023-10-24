@@ -27,7 +27,8 @@ const UserSchema = new Schema<IUser>(
       enum: ["admin", "usuario"],
     },
     imageUrl: {
-      type: String
+      type: String,
+      default: "https://avatar.png"
     }
   },
   {

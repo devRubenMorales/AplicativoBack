@@ -1,6 +1,7 @@
 import { Router } from "express";
 import * as userController from "../controllers/user.controller";
 import { authMiddleware } from "../middlewares/auth.middleware";
+import { mongoIdValidator } from "../middlewares/validators/userValidators";
 
 const router = Router().use(authMiddleware);
 

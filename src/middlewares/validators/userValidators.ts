@@ -13,9 +13,9 @@ export const authSingupValidators: Array<ValidationChain> = [
   check("contraseña")
     .isLength({ min: 6 })
     .withMessage("La contraseña debe tener al menos 6 caracteres"),
-  check("rol")
-    .isIn(["admin", "usuario"])
-    .withMessage("El rol debe ser 'admin' o 'usuario'"),
+  // check("rol")
+  //   .isIn(["admin", "usuario"])
+  //   .withMessage("El rol debe ser 'admin' o 'usuario'"),
 ];
 
 export const mongoIdValidator: ValidationChain = check("id")
